@@ -1,275 +1,308 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EngNet | Landing Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg: #060606;
-      --surface: #111111;
-      --surface-2: #171717;
-      --orange: #ff8d28;
-      /* --orange-2: #ffb14d; */
-      --purple: #8b5cf6;
-      /* --purple-2: #b47cff;
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EngNet | Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+        rel="stylesheet" />
+    <style>
+        :root {
+            --bg: #060606;
+            --surface: #111111;
+            --surface-2: #171717;
+            --orange: #ff8d28;
+            /* --orange-2: #ffb14d; */
+            --purple: #8b5cf6;
+            /* --purple-2: #b47cff;
       --cream: #ffffff; */
-    }
+        }
 
-    html {
-      scroll-behavior: smooth;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background:
-        radial-gradient(circle at top center, rgba(255, 141, 40, 0.12), transparent 20%),
-        radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.18), transparent 18%),
-        linear-gradient(180deg, #090909 0%, #050505 100%);
-      color: #ffffff;
-    }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background:
+                radial-gradient(circle at top center, rgba(255, 141, 40, 0.12), transparent 20%),
+                radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.18), transparent 18%),
+                linear-gradient(180deg, #090909 0%, #050505 100%);
+            color: #ffffff;
+        }
 
-    .font-heading {
-      font-family: 'Montserrat', sans-serif;
-    }
+        .font-heading {
+            font-family: 'Montserrat', sans-serif;
+        }
 
-    .type-h1 {
-      font-size: 3rem;
-      line-height: 1.05;
-      font-weight: 800;
-    }
+        .type-h1 {
+            font-size: 3rem;
+            line-height: 1.05;
+            font-weight: 800;
+        }
 
-    .type-h2 {
-      font-size: 2rem;
-      line-height: 1.1;
-      font-weight: 700;
-    }
+        .type-h2 {
+            font-size: 2rem;
+            line-height: 1.1;
+            font-weight: 700;
+        }
 
-    .type-h3 {
-      font-size: 1.625rem;
-      line-height: 1.15;
-      font-weight: 600;
-    }
+        .type-h3 {
+            font-size: 1.625rem;
+            line-height: 1.15;
+            font-weight: 600;
+        }
 
-    .type-body {
-      font-size: 1.125rem;
-      line-height: 1.5;
-      font-weight: 400;
-    }
+        .type-body {
+            font-size: 1.125rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
 
-    .type-btn {
-      font-size: 1rem;
-      line-height: 1.25;
-      font-weight: 600;
-    }
+        .type-btn {
+            font-size: 1rem;
+            line-height: 1.25;
+            font-weight: 600;
+        }
 
-    .glass {
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
+        .glass {
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
 
-    /* .hero-orb {
+        /* .hero-orb {
       background: radial-gradient(circle at 30% 30%, rgba(255, 177, 77, 0.95), rgba(255, 141, 40, 0.95) 45%, rgba(139, 92, 246, 0.95) 100%);
       box-shadow: 0 0 40px rgba(255, 141, 40, 0.2);
     } */
 
-    .section-shell {
-      width: 100%;
-      min-height: min(100vh, 920px);
-      padding: 1.25rem 1rem;
-    }
+        .section-shell {
+            width: 100%;
+            min-height: min(100vh, 920px);
+            padding: 1.25rem 1rem;
+        }
 
-    @media (min-width: 640px) {
-      .section-shell {
-        padding: 1.5rem;
-      }
-    }
+        @media (min-width: 640px) {
+            .section-shell {
+                padding: 1.5rem;
+            }
+        }
 
-    @media (min-width: 1024px) {
-      .section-shell {
-        padding: 2rem;
-      }
-    }
+        @media (min-width: 1024px) {
+            .section-shell {
+                padding: 2rem;
+            }
+        }
 
-    @media (max-width: 1023px) {
-      .type-h1 {
-        font-size: 2.25rem;
-      }
+        @media (max-width: 1023px) {
+            .type-h1 {
+                font-size: 2.25rem;
+            }
 
-      .type-h2 {
-        font-size: 1.75rem;
-      }
+            .type-h2 {
+                font-size: 1.75rem;
+            }
 
-      .type-h3 {
-        font-size: 1.375rem;
-      }
+            .type-h3 {
+                font-size: 1.375rem;
+            }
 
-      .type-body {
-        font-size: 1rem;
-      }
-    }
+            .type-body {
+                font-size: 1rem;
+            }
+        }
 
-    .hero-h1 {
-      font-size: 3.5rem;
-      line-height: 1.03;
-    }
+        .hero-h1 {
+            font-size: 3.5rem;
+            line-height: 1.03;
+        }
 
-    .hero-body {
-      font-size: 1.25rem;
-      line-height: 1.55;
-    }
+        .hero-body {
+            font-size: 1.25rem;
+            line-height: 1.55;
+        }
 
-    @media (max-width: 1023px) {
-      .hero-h1 {
-        font-size: 2.6rem;
-      }
+        @media (max-width: 1023px) {
+            .hero-h1 {
+                font-size: 2.6rem;
+            }
 
-      .hero-body {
-        font-size: 1.1rem;
-      }
-    }
-  </style>
+            .hero-body {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
+
 <body class="min-h-screen overflow-x-hidden text-white">
-  <main class="mx-auto w-full max-w-none px-4 pb-16 pt-28 sm:px-6 sm:pt-32 lg:px-8">
-    <header class="fixed left-4 right-4 top-3 z-50  bg-[#111111] px-6 py-4 shadow-[0_12px_30px_rgba(0,0,0,0.35)] sm:left-6 sm:right-6 lg:left-8 lg:right-8">
-      <div class="flex items-center justify-between gap-3 text-[14px] uppercase tracking-[0.32em] text-white/70">
-        <a href="#inicio" class="flex items-center gap-2 text-white">
-          <img src="./assets/img/logo1.png" alt="EngNet" class="h-10 w-10" />
-          <span class="font-heading text-[14px] font-bold tracking-[0.18em]">EngNet</span>
-        </a>
-        <nav class="hidden items-center gap-4 sm:flex">
-          <a href="#inicio" class="hover:text-white">Home</a>
-          <a href="#servicos" class="hover:text-white">Serviços</a>
-          <a href="#sobre" class="hover:text-white">Sobre</a>
-          <a href="#cases" class="hover:text-white">Cases</a>
-          <a href="#contato" class="hover:text-white">Contato</a>
-        </nav>
-      </div>
-    </header>
-
-    <section id="inicio" class="section-shell relative overflow-hidden rounded-[30px] border border-white/10 bg-[#090909] px-8 py-8 shadow-[0_30px_80px_rgba(0,0,0,0.45)] lg:px-16 lg:py-16">
-      <div class="relative grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
-        <div class="order-2 max-w-none lg:order-1 lg:max-w-3xl">
-            <p class="mt-6 mb-4 text-[12px] font-semibold uppercase tracking-[0.3em] text-[var(--orange)]/90">Somos uma empresa júnior de tecnologia</p>
-          <h1 class="font-heading type-h1 hero-h1 uppercase tracking-[-0.03em] text-[#f7f2ea]">
-            Soluções de engenharia para superar novos desafios
-          </h1>
-          <p class="type-body hero-body mt-5 max-w-2xl text-white/72">
-            Soluções de engenharia prontas para o uso, raramente resolvem todos os desafios do dia a dia. É por isso que criamos soluções personalizadas e focamos no desenvolvimento de  maneira conjunta com o cliente. 
-          </p>
-          <p class="type-body hero-body mt-5 max-w-2xl text-white/72">
-            Converse com os nossos consultores e garanta que a solução e tecnologia funcione para você (e não o contrário). 
-          </p>
-
-          <div class="mt-7 flex flex-wrap gap-3">
-            <a href="#contato" class="type-btn inline-flex rounded-full bg-[var(--purple)] px-5 py-3 uppercase tracking-[0.12em] text-white">Fale com a gente</a>
-          </div>
-        </div>
-
-        <div class="order-1 flex justify-center lg:order-2 lg:justify-end">
-          <img class="h-auto w-full max-w-[280px] object-contain sm:max-w-[320px] lg:max-w-[380px]" src="./assets/img/logo2.png" alt="EngNet" />
-        </div>
-      </div>
-    </section>
-
-    <section id="servicos" class="section-shell mt-4 overflow-hidden rounded-[30px] bg-white text-[#161616] shadow-[0_28px_80px_rgba(0,0,0,0.42)] lg:px-16 lg:py-16">
-      <div class="mb-6 ">
-        <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]">conte conosco</p>
-        <h2 class="font-heading type-h2 mt-2 uppercase tracking-[-0.03em]">nossos serviços</h2>
-        <div class="mt-5 flex ">
-          <a href="#contato" class="type-btn inline-flex rounded-full bg-[var(--orange)] px-5 py-3 uppercase tracking-[0.12em] text-white">Fale com a gente</a>
-        </div>
-      </div>
-
-      <div class="mx-auto w-full max-w-5xl rounded-[30px] bg-[#e7e7e7] px-6 py-10 text-[#171717] shadow-[0_28px_80px_rgba(0,0,0,0.15)] sm:px-10 sm:py-12">
-        <article class="mx-auto max-w-xl text-center">
-          <div class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
-            <img src="img/nossosServicos/solucoesPersonalizadas.png" alt="Soluções Personalizadas">
-          </div>
-          <h3 class="mt-4 text-[32px] font-bold leading-tight">Soluções Personalizadas</h3>
-          <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
-            Soluções que se adequam a sua necessidade, abrangemos a integração do hardware ao software para a implementação do projeto.
-          </p>
-        </article>
-
-        <div class="mt-12 grid grid-cols-1 gap-x-14 gap-y-10 md:grid-cols-2">
-          <article class="mx-auto max-w-md text-center">
-            <div class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
-              <img src="./assets/img/nossosServicos/aplicativos.png" alt="Aplicativos">
+    <main class="mx-auto w-full max-w-none px-4 pb-16 pt-28 sm:px-6 sm:pt-32 lg:px-8">
+        <header
+            class="fixed left-4 right-4 top-3 z-50  bg-[#111111] px-6 py-4 shadow-[0_12px_30px_rgba(0,0,0,0.35)] sm:left-6 sm:right-6 lg:left-8 lg:right-8">
+            <div class="flex items-center justify-between gap-3 text-[14px] uppercase tracking-[0.32em] text-white/70">
+                <a href="#inicio" class="flex items-center gap-2 text-white">
+                    <img src="./assets/img/logo1.png" alt="EngNet" class="h-10 w-10" />
+                    <span class="font-heading text-[14px] font-bold tracking-[0.18em]">EngNet</span>
+                </a>
+                <nav class="hidden items-center gap-4 sm:flex">
+                    <a href="#inicio" class="hover:text-white">Home</a>
+                    <a href="#servicos" class="hover:text-white">Serviços</a>
+                    <a href="#sobre" class="hover:text-white">Sobre</a>
+                    <a href="#cases" class="hover:text-white">Cases</a>
+                    <a href="#contato" class="hover:text-white">Contato</a>
+                </nav>
             </div>
-            <h3 class="mt-4 text-[32px] font-bold leading-tight">Aplicativos</h3>
-            <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
-              O desenvolvimento de aplicativos é destinado a novos empreendedores ou empresas que buscam oferecer experiências personalizadas para seus usuários, facilitando e automatizando processos para o uso intuitivo do cliente.
-            </p>
-          </article>
+        </header>
 
-          <article class="mx-auto max-w-md text-center">
-            <div class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
-              <img src="./assets/img/nossosServicos/sites.png" alt="Sites">
+        <section id="inicio"
+            class="section-shell relative overflow-hidden rounded-[30px] border border-white/10 bg-[#090909] px-8 py-8 shadow-[0_30px_80px_rgba(0,0,0,0.45)] lg:px-16 lg:py-16">
+            <div class="relative grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
+                <div class="order-2 max-w-none lg:order-1 lg:max-w-3xl">
+                    <p class="mt-6 mb-4 text-[12px] font-semibold uppercase tracking-[0.3em] text-[var(--orange)]/90">
+                        Somos uma empresa júnior de tecnologia</p>
+                    <h1 class="font-heading type-h1 hero-h1 uppercase tracking-[-0.03em] text-[#f7f2ea]">
+                        Soluções de engenharia para superar novos desafios
+                    </h1>
+                    <p class="type-body hero-body mt-5 max-w-2xl text-white/72">
+                        Soluções de engenharia prontas para o uso, raramente resolvem todos os desafios do dia a dia. É
+                        por isso que criamos soluções personalizadas e focamos no desenvolvimento de maneira conjunta
+                        com o cliente.
+                    </p>
+                    <p class="type-body hero-body mt-5 max-w-2xl text-white/72">
+                        Converse com os nossos consultores e garanta que a solução e tecnologia funcione para você (e
+                        não o contrário).
+                    </p>
+
+                    <div class="mt-7 flex flex-wrap gap-3">
+                        <a href="#contato"
+                            class="type-btn inline-flex rounded-full bg-[var(--purple)] px-5 py-3 uppercase tracking-[0.12em] text-white">Fale
+                            com a gente</a>
+                    </div>
+                </div>
+
+                <div class="order-1 flex justify-center lg:order-2 lg:justify-end">
+                    <img class="h-auto w-full max-w-[280px] object-contain sm:max-w-[320px] lg:max-w-[380px]"
+                        src="./assets/img/logo2.png" alt="EngNet" />
+                </div>
             </div>
-            <h3 class="mt-4 text-[32px] font-bold leading-tight">Sites</h3>
-            <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
-              Se torne visível na internet, divulgue a imagem da sua instituição para o público e potencialize sua prospecção passiva e conversões online.
-            </p>
-          </article>
+        </section>
 
-          <article class="mx-auto max-w-md text-center">
-            <div class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
-              <img src="./assets/img/nossosServicos/consepcoesDigitais.png" alt="Concepções Digitais">
+        <section id="servicos"
+            class="section-shell mt-4 overflow-hidden rounded-[30px] bg-white text-[#161616] shadow-[0_28px_80px_rgba(0,0,0,0.42)] lg:px-16 lg:py-16">
+            <div class="mb-6 ">
+                <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]">conte conosco</p>
+                <h2 class="font-heading type-h2 mt-2 uppercase tracking-[-0.03em]">nossos serviços</h2>
+                <div class="mt-5 flex ">
+                    <a href="#contato"
+                        class="type-btn inline-flex rounded-full bg-[var(--orange)] px-5 py-3 uppercase tracking-[0.12em] text-white">Fale
+                        com a gente</a>
+                </div>
             </div>
-            <h3 class="mt-4 text-[32px] font-bold leading-tight">Concepções Digitais</h3>
-            <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
-              Verifique a viabilidade tecnológica do seu projeto e amadureça a sua ideia por meio da coleta de requisitos e prototipação.
-            </p>
-          </article>
 
-          <article class="mx-auto max-w-md text-center">
-            <div class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
-                <img src="./assets/img/nossosServicos/sistemasWeb.png" alt="Sistemas Web">
+            <div
+                class="mx-auto w-full max-w-5xl rounded-[30px] bg-[#e7e7e7] px-6 py-10 text-[#171717] shadow-[0_28px_80px_rgba(0,0,0,0.15)] sm:px-10 sm:py-12">
+                <article class="mx-auto max-w-xl text-center">
+                    <div
+                        class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
+                        <img src="img/nossosServicos/solucoesPersonalizadas.png" alt="Soluções Personalizadas">
+                    </div>
+                    <h3 class="mt-4 text-[32px] font-bold leading-tight">Soluções Personalizadas</h3>
+                    <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
+                        Soluções que se adequam a sua necessidade, abrangemos a integração do hardware ao software para
+                        a implementação do projeto.
+                    </p>
+                </article>
+
+                <div class="mt-12 grid grid-cols-1 gap-x-14 gap-y-10 md:grid-cols-2">
+                    <article class="mx-auto max-w-md text-center">
+                        <div
+                            class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
+                            <img src="./assets/img/nossosServicos/aplicativos.png" alt="Aplicativos">
+                        </div>
+                        <h3 class="mt-4 text-[32px] font-bold leading-tight">Aplicativos</h3>
+                        <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
+                            O desenvolvimento de aplicativos é destinado a novos empreendedores ou empresas que buscam
+                            oferecer experiências personalizadas para seus usuários, facilitando e automatizando
+                            processos para o uso intuitivo do cliente.
+                        </p>
+                    </article>
+
+                    <article class="mx-auto max-w-md text-center">
+                        <div
+                            class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
+                            <img src="./assets/img/nossosServicos/sites.png" alt="Sites">
+                        </div>
+                        <h3 class="mt-4 text-[32px] font-bold leading-tight">Sites</h3>
+                        <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
+                            Se torne visível na internet, divulgue a imagem da sua instituição para o público e
+                            potencialize sua prospecção passiva e conversões online.
+                        </p>
+                    </article>
+
+                    <article class="mx-auto max-w-md text-center">
+                        <div
+                            class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
+                            <img src="./assets/img/nossosServicos/consepcoesDigitais.png" alt="Concepções Digitais">
+                        </div>
+                        <h3 class="mt-4 text-[32px] font-bold leading-tight">Concepções Digitais</h3>
+                        <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
+                            Verifique a viabilidade tecnológica do seu projeto e amadureça a sua ideia por meio da
+                            coleta de requisitos e prototipação.
+                        </p>
+                    </article>
+
+                    <article class="mx-auto max-w-md text-center">
+                        <div
+                            class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-full bg-[var(--orange)]/30 text-[var(--orange)]">
+                            <img src="./assets/img/nossosServicos/sistemasWeb.png" alt="Sistemas Web">
+                        </div>
+                        <h3 class="mt-4 text-[32px] font-bold leading-tight">Sistemas Web</h3>
+                        <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
+                            Se adeque à todos os tipos de dispositivos por um sistema web que automatiza e organiza
+                            processos conforme sua personalização.
+                        </p>
+                    </article>
+                </div>
             </div>
-            <h3 class="mt-4 text-[32px] font-bold leading-tight">Sistemas Web</h3>
-            <p class="mt-3 text-[18px] leading-8 text-[#3f3f3f]">
-              Se adeque à todos os tipos de dispositivos por um sistema web que automatiza e organiza processos conforme sua personalização.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section id="sobre" class="section-shell mt-4 overflow-hidden rounded-[30px] bg-white px-6 py-8 text-[#161616] shadow-[0_28px_80px_rgba(0,0,0,0.42)] lg:px-16 lg:py-16">
-      <div class="mb-6">
-        <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]">O quem somos</p>
-        <h2 class="font-heading type-h2 mt-2 uppercase tracking-[-0.03em]">Empresa júnior de tecnologia</h2>
-      </div>
+        <section id="sobre"
+            class="section-shell mt-4 overflow-hidden rounded-[30px] bg-white px-6 py-8 text-[#161616] shadow-[0_28px_80px_rgba(0,0,0,0.42)] lg:px-16 lg:py-16">
+            <div class="mb-6">
+                <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]">O quem somos</p>
+                <h2 class="font-heading type-h2 mt-2 uppercase tracking-[-0.03em]">Empresa júnior de tecnologia</h2>
+            </div>
 
-      <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-        <div class="type-body text-[#4b4b4b]">
-            <p>
-              Uma empresa júnior é uma organização sem fins lucrativos composta por estudantes universitários que se dedicam a oferecer serviços de consultoria e desenvolvimento para empresas.
-            </p>
-            <p class="mt-3">
-              A ideia principal da empresa júnior é proporcionar uma oportunidade para que os estudantes possam aplicar na prática os conhecimentos adquiridos na universidade e, ao mesmo tempo, ajudar empresas e organizações a solucionar problemas e aprimorar seus processos de negócio.
-            </p>
-            <p class="mt-3">
-              Além disso, a empresa júnior também promove o desenvolvimento pessoal e profissional dos estudantes, que têm a oportunidade de desenvolver habilidades de liderança, trabalho em equipe, negociação, comunicação, entre outras competências importantes para o mercado de trabalho.
-            </p>
-        </div>
+            <div class="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div class="type-body text-[#4b4b4b]">
+                    <p>
+                        Uma empresa júnior é uma organização sem fins lucrativos composta por estudantes universitários
+                        que se dedicam a oferecer serviços de consultoria e desenvolvimento para empresas.
+                    </p>
+                    <p class="mt-3">
+                        A ideia principal da empresa júnior é proporcionar uma oportunidade para que os estudantes
+                        possam aplicar na prática os conhecimentos adquiridos na universidade e, ao mesmo tempo, ajudar
+                        empresas e organizações a solucionar problemas e aprimorar seus processos de negócio.
+                    </p>
+                    <p class="mt-3">
+                        Além disso, a empresa júnior também promove o desenvolvimento pessoal e profissional dos
+                        estudantes, que têm a oportunidade de desenvolver habilidades de liderança, trabalho em equipe,
+                        negociação, comunicação, entre outras competências importantes para o mercado de trabalho.
+                    </p>
+                </div>
 
-        <!-- <div class="relative overflow-hidden rounded-[26px] bg-gradient-to-br from-[#b76cff] via-[#7d4ae8] to-[#23103c] p-5 text-white shadow-lg"> -->
-            <img src="./assets/img/bandeiraEngnet.png" alt="Nossa Equipe">
-        <!-- </div> -->
+                <!-- <div class="relative overflow-hidden rounded-[26px] bg-gradient-to-br from-[#b76cff] via-[#7d4ae8] to-[#23103c] p-5 text-white shadow-lg"> -->
+                <img src="./assets/img/bandeiraEngnet.png" alt="Nossa Equipe">
+                <!-- </div> -->
 
-        <!-- <div class="relative overflow-hidden rounded-[26px] bg-[#f5efe8] p-5 shadow-lg"> -->
-        <div class="-mt-40">
-            <img src="./assets/img/foto.png" alt="">
+                <!-- <div class="relative overflow-hidden rounded-[26px] bg-[#f5efe8] p-5 shadow-lg"> -->
+                <div class="-mt-40">
+                    <img src="./assets/img/foto.png" alt="">
 
-        </div>
-          <!-- <div class="absolute right-2 top-2 h-24 w-24 rounded-full bg-[var(--orange)]/20 blur-2xl"></div>
+                </div>
+                <!-- <div class="absolute right-2 top-2 h-24 w-24 rounded-full bg-[var(--orange)]/20 blur-2xl"></div>
           <div class="relative mt-3 h-28 overflow-hidden rounded-[22px] bg-gradient-to-br from-[#1f1f1f] to-[#444]">
             <div class="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-black/55 to-transparent"></div>
             <div class="absolute left-4 top-5 h-10 w-10 rounded-full bg-white/12"></div>
@@ -280,117 +313,152 @@
           <p class="mt-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#8a5b1e]">Consultoria</p>
           <p class="mt-1 text-[11px] leading-4 text-[#4f4f4f]">Apoio técnico com entrega clara, organizada e confiável.</p>
         </div> -->
-      <!-- </div> -->
-    <div class="mb-6 mt-6 px-1">
-        <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]">Quem somos</p>
-        <h2 class="font-heading type-h2 mt-2 uppercase tracking-[-0.03em]">Engnet consultoria</h2>
-        <div class="mt-6 grid grid-cols-1 gap-6 ">
-            <p>
-              Uma empresa júnior é uma organização sem fins lucrativos composta por estudantes universitários que se dedicam a oferecer serviços de consultoria e desenvolvimento para empresas.
-            </p>
-            <p class="mt-3">
-              A ideia principal da empresa júnior é proporcionar uma oportunidade para que os estudantes possam aplicar na prática os conhecimentos adquiridos na universidade e, ao mesmo tempo, ajudar empresas e organizações a solucionar problemas e aprimorar seus processos de negócio.
-            </p>
-            <p class="mt-3">
-              Além disso, a empresa júnior também promove o desenvolvimento pessoal e profissional dos estudantes, que têm a oportunidade de desenvolver habilidades de liderança, trabalho em equipe, negociação, comunicação, entre outras competências importantes para o mercado de trabalho.
-            </p>
-        </div>
-      </div>
-      <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <div class="rounded-2xl bg-[#faf7f2] px-4 py-5 text-center ring-1 ring-black/5">
-          <p class="text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--purple)]">Missão</p>
-          <p class="mt-2 text-[16px] leading-6 text-[#585858]">Resolver problemas com tecnologia útil.</p>
-        </div>
-        <div class="rounded-2xl bg-[#faf7f2] px-4 py-5 text-center ring-1 ring-black/5">
-          <p class="text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--purple)]">Visão</p>
-          <p class="mt-2 text-[16px] leading-6 text-[#585858]">Ser referência em entrega consistente.</p>
-        </div>
-        <div class="rounded-2xl bg-[#faf7f2] px-4 py-5 text-center ring-1 ring-black/5">
-          <p class="text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--purple)]">Valores</p>
-          <p class="mt-2 text-[16px] leading-6 text-[#585858]">Clareza, colaboração e qualidade.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="cases" class="section-shell mt-5 overflow-hidden rounded-[30px] px-6 py-8 pb-4 lg:px-10 lg:py-10">
-      <div class="mb-6 px-1">
-        <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]/90">Nossos cases</p>
-        <h2 class="font-heading type-h2 mt-2 uppercase tracking-[-0.03em] text-white">Projetos que já saíram do papel</h2>
-      </div>
-
-      <div class="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
-        <article class="overflow-hidden rounded-[22px] border border-white/10 bg-white p-4 text-[#151515] shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
-          <div class="h-16 rounded-xl bg-gradient-to-br from-[#ffe9c8] via-[#fff6ea] to-[#f5c778] p-2">
-            <div class="flex h-full items-start justify-between">
-              <div class="h-8 w-8 rounded-full bg-[#111]/85"></div>
-              <div class="h-7 w-7 rounded-md bg-[#ff8a1f]/85"></div>
+                <!-- </div> -->
+                <div class="mb-6 mt-6 px-1">
+                    <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]">Quem somos</p>
+                    <h2 class="font-heading type-h2 mt-2 uppercase tracking-[-0.03em]">Engnet consultoria</h2>
+                    <div class="mt-6 grid grid-cols-1 gap-6 ">
+                        <p>
+                            Uma empresa júnior é uma organização sem fins lucrativos composta por estudantes
+                            universitários que se dedicam a oferecer serviços de consultoria e desenvolvimento para
+                            empresas.
+                        </p>
+                        <p class="mt-3">
+                            A ideia principal da empresa júnior é proporcionar uma oportunidade para que os estudantes
+                            possam aplicar na prática os conhecimentos adquiridos na universidade e, ao mesmo tempo,
+                            ajudar empresas e organizações a solucionar problemas e aprimorar seus processos de negócio.
+                        </p>
+                        <p class="mt-3">
+                            Além disso, a empresa júnior também promove o desenvolvimento pessoal e profissional dos
+                            estudantes, que têm a oportunidade de desenvolver habilidades de liderança, trabalho em
+                            equipe, negociação, comunicação, entre outras competências importantes para o mercado de
+                            trabalho.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <h3 class="type-h3 mt-2 uppercase tracking-[0.08em]">Projeto Alpha</h3>
-          <p class="type-body mt-2 text-[#5d5d5d]">Landing page institucional com foco em captação.</p>
-          <a href="#contato" class="type-btn mt-3 inline-flex rounded-full bg-[var(--purple)] px-4 py-2 uppercase tracking-[0.12em] text-white">Ver case</a>
-        </article>
-
-        <article class="overflow-hidden rounded-[22px] border border-white/10 bg-white p-4 text-[#151515] shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
-          <div class="h-16 rounded-xl bg-gradient-to-br from-[#eef4ff] via-[#f5f8ff] to-[#cad8ff] p-2">
-            <div class="flex h-full items-end justify-between">
-              <div class="h-10 w-12 rounded-xl bg-[#3554a6]"></div>
-              <div class="h-5 w-10 rounded-full bg-[#111]/80"></div>
+            <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                <div class="rounded-2xl bg-[#faf7f2] px-4 py-5 text-center ring-1 ring-black/5">
+                    <p class="text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--purple)]">Missão</p>
+                    <p class="mt-2 text-[16px] leading-6 text-[#585858]">Resolver problemas com tecnologia útil.</p>
+                </div>
+                <div class="rounded-2xl bg-[#faf7f2] px-4 py-5 text-center ring-1 ring-black/5">
+                    <p class="text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--purple)]">Visão</p>
+                    <p class="mt-2 text-[16px] leading-6 text-[#585858]">Ser referência em entrega consistente.</p>
+                </div>
+                <div class="rounded-2xl bg-[#faf7f2] px-4 py-5 text-center ring-1 ring-black/5">
+                    <p class="text-[12px] font-bold uppercase tracking-[0.22em] text-[var(--purple)]">Valores</p>
+                    <p class="mt-2 text-[16px] leading-6 text-[#585858]">Clareza, colaboração e qualidade.</p>
+                </div>
             </div>
-          </div>
-          <h3 class="type-h3 mt-2 uppercase tracking-[0.08em]">EMDIA</h3>
-          <p class="type-body mt-2 text-[#5d5d5d]">Sistema para organizar atendimento e evolução.</p>
-          <a href="#contato" class="type-btn mt-3 inline-flex rounded-full bg-[var(--purple)] px-4 py-2 uppercase tracking-[0.12em] text-white">Ver case</a>
-        </article>
+        </section>
 
-        <article class="overflow-hidden rounded-[22px] border border-white/10 bg-white p-4 text-[#151515] shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
-          <div class="h-16 rounded-xl bg-gradient-to-br from-[#dcebff] via-[#f4f8ff] to-[#bdd5ff] p-2">
-            <div class="flex h-full items-end justify-between">
-              <div class="h-8 w-8 rounded-full bg-[#1f3b78]"></div>
-              <div class="h-8 w-14 rounded-lg bg-[#0d4ead]"></div>
+        <section id="cases" class="section-shell mt-5 overflow-hidden rounded-[30px] px-6 py-8 pb-4 lg:px-10 lg:py-10">
+            <div class="mb-6 px-1">
+                <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]/90">Nossos cases</p>
+                <h2 class="font-heading type-h2 mt-2 uppercase tracking-[-0.03em] text-white">Projetos que já saíram do
+                    papel</h2>
             </div>
-          </div>
-          <h3 class="type-h3 mt-2 uppercase tracking-[0.08em]">Concentra</h3>
-          <p class="type-body mt-2 text-[#5d5d5d]">Ferramentas para gestão visual de processos.</p>
-          <a href="#contato" class="type-btn mt-3 inline-flex rounded-full bg-[var(--purple)] px-4 py-2 uppercase tracking-[0.12em] text-white">Ver case</a>
-        </article>
-      </div>
-    </section>
 
-    <section id="contato" class="section-shell mt-5 overflow-hidden rounded-[24px] px-6 py-8 shadow-[0_28px_80px_rgba(0,0,0,0.48)] lg:px-10 lg:py-10">
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 ">
-        <div class="bg-white px-6 py-6 text-[#171717]">
-          <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]">Entre em contato</p>
-          <h2 class="font-heading type-h2 mt-3 uppercase tracking-[-0.03em]">Vamos conversar sobre seu projeto</h2>
-          <p class="type-body mt-3 text-[#555]">Conte o desafio e a gente responde com direção técnica e uma proposta objetiva.</p>
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
+                <article
+                    class="overflow-hidden rounded-[22px] border border-white/10 bg-white p-4 text-[#151515] shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+                    <div class="h-16 rounded-xl bg-gradient-to-br from-[#ffe9c8] via-[#fff6ea] to-[#f5c778] p-2">
+                        <div class="flex h-full items-start justify-between">
+                            <div class="h-8 w-8 rounded-full bg-[#111]/85"></div>
+                            <div class="h-7 w-7 rounded-md bg-[#ff8a1f]/85"></div>
+                        </div>
+                    </div>
+                    <h3 class="type-h3 mt-2 uppercase tracking-[0.08em]">Projeto Alpha</h3>
+                    <p class="type-body mt-2 text-[#5d5d5d]">Landing page institucional com foco em captação.</p>
+                    <a href="#contato"
+                        class="type-btn mt-3 inline-flex rounded-full bg-[var(--purple)] px-4 py-2 uppercase tracking-[0.12em] text-white">Ver
+                        case</a>
+                </article>
 
-          <div class="mt-5 space-y-3 text-[16px] text-[#4f4f4f]">
-            <div class="flex items-center gap-2">
-              <span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#ff8a1f]/15 text-[var(--orange)]">@</span>
-              <span>contato@engnet.com</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#ff8a1f]/15 text-[var(--orange)]">☎</span>
-              <span>(00) 0000-0000</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="flex h-5 w-5 items-center justify-center rounded-full bg-[#ff8a1f]/15 text-[var(--orange)]">⌁</span>
-              <span>Engenharia e tecnologia para negócios</span>
-            </div>
-          </div>
-        </div>
+                <article
+                    class="overflow-hidden rounded-[22px] border border-white/10 bg-white p-4 text-[#151515] shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+                    <div class="h-16 rounded-xl bg-gradient-to-br from-[#eef4ff] via-[#f5f8ff] to-[#cad8ff] p-2">
+                        <div class="flex h-full items-end justify-between">
+                            <div class="h-10 w-12 rounded-xl bg-[#3554a6]"></div>
+                            <div class="h-5 w-10 rounded-full bg-[#111]/80"></div>
+                        </div>
+                    </div>
+                    <h3 class="type-h3 mt-2 uppercase tracking-[0.08em]">EMDIA</h3>
+                    <p class="type-body mt-2 text-[#5d5d5d]">Sistema para organizar atendimento e evolução.</p>
+                    <a href="#contato"
+                        class="type-btn mt-3 inline-flex rounded-full bg-[var(--purple)] px-4 py-2 uppercase tracking-[0.12em] text-white">Ver
+                        case</a>
+                </article>
 
-        <form class="bg-[var(--orange)] px-6 py-6 text-white">
-          <div class="space-y-3">
-            <input class="w-full rounded-lg border border-white/20 bg-white/90 px-4 py-3 text-[16px] text-[#222] outline-none placeholder:text-[#6d6d6d]" type="text" placeholder="Nome" />
-            <input class="w-full rounded-lg border border-white/20 bg-white/90 px-4 py-3 text-[16px] text-[#222] outline-none placeholder:text-[#6d6d6d]" type="email" placeholder="E-mail" />
-            <input class="w-full rounded-lg border border-white/20 bg-white/90 px-4 py-3 text-[16px] text-[#222] outline-none placeholder:text-[#6d6d6d]" type="text" placeholder="Assunto" />
-            <textarea class="min-h-24 w-full resize-none rounded-lg border border-white/20 bg-white/90 px-4 py-3 text-[16px] text-[#222] outline-none placeholder:text-[#6d6d6d]" placeholder="Conte seu desafio"></textarea>
-          </div>
-          <button type="button" class="type-btn mt-4 rounded-full bg-[#7c3aed] px-6 py-3 uppercase tracking-[0.12em] text-white transition hover:brightness-110">Enviar</button>
-        </form>
-      </div>
-    </section>
-  </main>
+                <article
+                    class="overflow-hidden rounded-[22px] border border-white/10 bg-white p-4 text-[#151515] shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+                    <div class="h-16 rounded-xl bg-gradient-to-br from-[#dcebff] via-[#f4f8ff] to-[#bdd5ff] p-2">
+                        <div class="flex h-full items-end justify-between">
+                            <div class="h-8 w-8 rounded-full bg-[#1f3b78]"></div>
+                            <div class="h-8 w-14 rounded-lg bg-[#0d4ead]"></div>
+                        </div>
+                    </div>
+                    <h3 class="type-h3 mt-2 uppercase tracking-[0.08em]">Concentra</h3>
+                    <p class="type-body mt-2 text-[#5d5d5d]">Ferramentas para gestão visual de processos.</p>
+                    <a href="#contato"
+                        class="type-btn mt-3 inline-flex rounded-full bg-[var(--purple)] px-4 py-2 uppercase tracking-[0.12em] text-white">Ver
+                        case</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato"
+            class="section-shell mt-5 overflow-hidden rounded-[24px] px-6 py-8 shadow-[0_28px_80px_rgba(0,0,0,0.48)] lg:px-10 lg:py-10">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 ">
+                <div class="bg-white px-6 py-6 text-[#171717]">
+                    <p class="text-[12px] font-bold uppercase tracking-[0.3em] text-[var(--orange)]">Entre em contato
+                    </p>
+                    <h2 class="font-heading type-h2 mt-3 uppercase tracking-[-0.03em]">Vamos conversar sobre seu projeto
+                    </h2>
+                    <p class="type-body mt-3 text-[#555]">Conte o desafio e a gente responde com direção técnica e uma
+                        proposta objetiva.</p>
+
+                    <div class="mt-5 space-y-3 text-[16px] text-[#4f4f4f]">
+                        <div class="flex items-center gap-2">
+                            <span
+                                class="flex h-5 w-5 items-center justify-center rounded-full bg-[#ff8a1f]/15 text-[var(--orange)]">@</span>
+                            <span>contato@engnet.com</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span
+                                class="flex h-5 w-5 items-center justify-center rounded-full bg-[#ff8a1f]/15 text-[var(--orange)]">☎</span>
+                            <span>(00) 0000-0000</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span
+                                class="flex h-5 w-5 items-center justify-center rounded-full bg-[#ff8a1f]/15 text-[var(--orange)]">⌁</span>
+                            <span>Engenharia e tecnologia para negócios</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="bg-[var(--orange)] px-6 py-6 text-white">
+                    <div class="space-y-3">
+                        <input
+                            class="w-full rounded-lg border border-white/20 bg-white/90 px-4 py-3 text-[16px] text-[#222] outline-none placeholder:text-[#6d6d6d]"
+                            type="text" placeholder="Nome" />
+                        <input
+                            class="w-full rounded-lg border border-white/20 bg-white/90 px-4 py-3 text-[16px] text-[#222] outline-none placeholder:text-[#6d6d6d]"
+                            type="email" placeholder="E-mail" />
+                        <input
+                            class="w-full rounded-lg border border-white/20 bg-white/90 px-4 py-3 text-[16px] text-[#222] outline-none placeholder:text-[#6d6d6d]"
+                            type="text" placeholder="Assunto" />
+                        <textarea
+                            class="min-h-24 w-full resize-none rounded-lg border border-white/20 bg-white/90 px-4 py-3 text-[16px] text-[#222] outline-none placeholder:text-[#6d6d6d]"
+                            placeholder="Conte seu desafio"></textarea>
+                    </div>
+                    <button type="button"
+                        class="type-btn mt-4 rounded-full bg-[#7c3aed] px-6 py-3 uppercase tracking-[0.12em] text-white transition hover:brightness-110">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
